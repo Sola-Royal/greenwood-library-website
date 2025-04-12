@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Reviews - Greenwood Community Library</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Add a stylesheet reference if needed -->
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="book-reviews.html" class="active">Book Reviews</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Book Reviews</h1>
+        <p>Welcome to the Book Reviews section! Here, you can explore reviews of popular books reviewed by our community members. Share your thoughts and discover your next great read.</p>
+        
+        <section>
+            <h2>Top Picks Reviewed by Our Community</h2>
+            <article>
+                <h3>The Great Gatsby</h3>
+                <p><strong>Reviewer:</strong> Jane Doe</p>
+                <p><strong>Review:</strong> "A timeless classic that explores themes of love, ambition, and the American Dream. Fitzgerald's writing is nothing short of poetic."</p>
+                <p><strong>Rating:</strong> ★★★★★</p>
+            </article>
+            <article>
+                <h3>1984</h3>
+                <p><strong>Reviewer:</strong> John Smith</p>
+                <p><strong>Review:</strong> "A chilling dystopian masterpiece that remains relevant in today's world. Orwell's vision is both terrifying and thought-provoking."</p>
+                <p><strong>Rating:</strong> ★★★★☆</p>
+            </article>
+            <article>
+                <h3>To Kill a Mockingbird</h3>
+                <p><strong>Reviewer:</strong> Emily Johnson</p>
+                <p><strong>Review:</strong> "A powerful story of morality and justice told through the innocent eyes of Scout Finch. A must-read for everyone."</p>
+                <p><strong>Rating:</strong> ★★★★★</p>
+            </article>
+        </section>
+        
+        <section>
+            <h2>Submit Your Review</h2>
+            <form action="submit-review.html" method="post">
+                <label for="book-title">Book Title:</label><br>
+                <input type="text" id="book-title" name="book-title" required><br>
+                
+                <label for="reviewer-name">Your Name:</label><br>
+                <input type="text" id="reviewer-name" name="reviewer-name" required><br>
+                
+                <label for="review-text">Your Review:</label><br>
+                <textarea id="review-text" name="review-text" rows="5" required></textarea><br>
+                
+                <label for="rating">Rating:</label><br>
+                <select id="rating" name="rating">
+                    <option value="5">★★★★★</option>
+                    <option value="4">★★★★☆</option>
+                    <option value="3">★★★☆☆</option>
+                    <option value="2">★★☆☆☆</option>
+                    <option value="1">★☆☆☆☆</option>
+                </select><br><br>
+                
+                <button type="submit">Submit Review</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Greenwood Community Library. All rights reserved.</p>
+    </footer>
+</body>
+</html>
